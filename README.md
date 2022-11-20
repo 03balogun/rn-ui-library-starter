@@ -2,6 +2,8 @@
 
 # Reactnative UI library starter
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/03balogun/rn-ui-library-starter/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/03balogun/rn-ui-library-starter/tree/master)
+
 ## Introduction
 The aim of this project is to help improve developer experience when creating a reactnative UI library.
 
@@ -79,13 +81,15 @@ Note that this is only necessary for when you add or remove a story file.
 Create your components and export them in `src/index.ts`
 
 ## Publishing your package
-
+- You should run `npx semantic-release-cli setup` in your cli to setup for your preferred CI.
 - Setup your project on CircleCI
 - Goto the project settings to add Environment Variables and values for `NPM_TOKEN` and `GH_TOKEN`
   - [how generate your NPM token](https://docs.npmjs.com/creating-and-viewing-access-tokens)
   - [how generate your github token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 - Run deployment, subsequent push to the master or beta branch will roll out new release depending on if there's a new feature, fixes or breaking changes.
 
+## Sample NPM package
+- [@03balogun/rn-ui-library-starter](https://www.npmjs.com/package/@03balogun/awesomeuilib)
 
 ## Credits
 - [expo-storybook-starter](https://github.com/dannyhw/expo-storybook-starter) was created by Daniel Williams
