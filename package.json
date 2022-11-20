@@ -1,6 +1,6 @@
 {
   "name": "@03balogun/rn-ui-library-starter",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "main": "node_modules/expo/AppEntry.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -132,5 +132,9 @@
       }
     ]
   },
-  "private": false
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/03balogun/rn-ui-library-starter.git"
+  }
 }
