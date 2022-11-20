@@ -78,5 +78,14 @@ Note that this is only necessary for when you add or remove a story file.
 ## Create components
 Create your components and export them in `src/index.ts`
 
+## Publishing your package
+
+- Setup your project on CircleCI
+- Goto the project settings to add Environment Variables and values for `NPM_TOKEN` and `GH_TOKEN`
+  - [how generate your NPM token](https://docs.npmjs.com/creating-and-viewing-access-tokens)
+  - [how generate your github token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- Run deployment, subsequent push to the master or beta branch will roll out new release depending on if there's a new feature, fixes or breaking changes.
+
+
 ## Credits
 - [expo-storybook-starter](https://github.com/dannyhw/expo-storybook-starter) was created by Daniel Williams
